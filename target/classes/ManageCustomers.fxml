@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="taskmanagement.controller.ManageCustomersController"
+      spacing="20" style="-fx-padding: 20;">
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Manage Customers" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <Button text="Add Customer" onAction="#onAddCustomer"/>
+    </HBox>
+
+    <ScrollPane fitToWidth="true">
+        <GridPane fx:id="customerGrid" hgap="20" vgap="20">
+            <padding><Insets top="10" right="0" bottom="10" left="0"/></padding>
+        </GridPane>
+    </ScrollPane>
+</VBox>

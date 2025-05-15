@@ -1,0 +1,13 @@
+[ {
+  "id" : "leave-1",
+  "title" : "Annual Leave",
+  "description" : "Paid time off for personal use, accrued annually."
+}, {
+  "id" : "leave-2",
+  "title" : "Sick Leave",
+  "description" : "Time off for medical reasons or recovery."
+}, {
+  "id" : "leave-3",
+  "title" : "Maternity Leave",
+  "description" : "Leave for childbirth and childcare."
+} ]

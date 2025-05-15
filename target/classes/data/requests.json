@@ -1,0 +1,19 @@
+[ {
+  "id" : 1,
+  "employeeId" : "9c632163-dd2f-4bfa-b95f-2491afb86f98",
+  "type" : "LEAVE",
+  "leaveTypeId" : "leave-1",
+  "startDate" : "2025-05-15",
+  "endDate" : "2025-05-16",
+  "status" : "APPROVED",
+  "reason" : "sick"
+}, {
+  "id" : 2,
+  "employeeId" : "9c632163-dd2f-4bfa-b95f-2491afb86f98",
+  "type" : "LEAVE",
+  "leaveTypeId" : "leave-2",
+  "startDate" : "2025-05-14",
+  "endDate" : "2025-05-30",
+  "status" : "PENDING",
+  "reason" : "dd"
+} ]

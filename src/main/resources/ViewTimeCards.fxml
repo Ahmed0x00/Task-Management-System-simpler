@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="taskmanagement.controller.ViewTimeCardsController"
+      spacing="10" alignment="TOP_CENTER" prefWidth="800" prefHeight="600">
+
+    <VBox fx:id="submissionForm" spacing="10" alignment="CENTER" visible="false">
+        <Label text="Submit Time Card"/>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Date:"/>
+            <DatePicker fx:id="datePicker"/>
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Clock In (HH:mm):"/>
+            <TextField fx:id="clockInField" prefWidth="100"/>
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Clock Out (HH:mm):"/>
+            <TextField fx:id="clockOutField" prefWidth="100"/>
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Hours Worked (optional):"/>
+            <TextField fx:id="hoursWorkedField" prefWidth="100"/>
+        </HBox>
+        <Button fx:id="submitButton" text="Submit" onAction="#handleSubmitTimeCard"/>
+    </VBox>
+
+    <TableView fx:id="timeCardTable" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="employeeNameColumn" text="Employee Name" prefWidth="150"/>
+            <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+            <TableColumn fx:id="clockInColumn" text="Clock In" prefWidth="100"/>
+            <TableColumn fx:id="clockOutColumn" text="Clock Out" prefWidth="100"/>
+            <TableColumn fx:id="hoursWorkedColumn" text="Hours Worked" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+</VBox>

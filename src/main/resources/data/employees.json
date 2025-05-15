@@ -1,0 +1,31 @@
+[ {
+  "id" : "emp1",
+  "name" : "John Doe",
+  "email" : "john.doe@example.com",
+  "phone" : "123-456-7890",
+  "employeeTypeId" : 1
+}, {
+  "id" : "emp2",
+  "name" : "Jane Smith",
+  "email" : "jane.smith@example.com",
+  "phone" : "987-654-3210",
+  "employeeTypeId" : 0
+}, {
+  "id" : "4aa0e413-679d-41c2-8af2-574a920fa323",
+  "name" : "ahm",
+  "email" : "ddd@gmil.com",
+  "phone" : "123",
+  "employeeTypeId" : 2
+}, {
+  "id" : "48661255-f3de-4492-ab48-2de6e7e67f3d",
+  "name" : "test",
+  "email" : "aa@gmail.com",
+  "phone" : "1234y",
+  "employeeTypeId" : 2
+}, {
+  "id" : "9c632163-dd2f-4bfa-b95f-2491afb86f98",
+  "name" : "e1",
+  "email" : "e1@g.com",
+  "phone" : "12345",
+  "employeeTypeId" : 1
+} ]

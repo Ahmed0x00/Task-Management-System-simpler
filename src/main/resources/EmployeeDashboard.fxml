@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox fx:controller="taskmanagement.controller.EmployeeController"
+      xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="TOP_CENTER">
+    <Label text="Employee Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Tasks" onAction="#loadManageTasksView" />
+        <Button text="Task Logs" onAction="#loadManageTaskLogsView" />
+        <Button text="Leave Types" onAction="#loadManageLeaveTypesView" />
+        <Button text="Requests" onAction="#loadViewRequests"/>
+        <Button text="Time Cards" onAction="#loadTimeCards"/>
+        <Button text="Calendar" onAction="#loadCalendar"/>
+    </HBox>
+    <StackPane fx:id="mainContent" minHeight="400" style="-fx-border-color: gray;">
+        <Label text="Welcome to the Employee Dashboard" />
+    </StackPane>
+</VBox>

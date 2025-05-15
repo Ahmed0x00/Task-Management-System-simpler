@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="taskmanagement.controller.CalendarController"
+      spacing="0" alignment="TOP_CENTER" maxWidth="Infinity" maxHeight="Infinity">
+
+    <!-- Summary -->
+    <TextArea editable="false" wrapText="true" prefHeight="40" maxHeight="40" style="-fx-font-size: 12; -fx-background-color: lightyellow;">
+        <text>Employees see their tasks (blue) and phases (green). Leaders see all tasks/phases with employee names. Blue = tasks, green = phases. Click for details.</text>
+    </TextArea>
+
+    <!-- Navigation bar (smaller) -->
+    <HBox spacing="10" alignment="CENTER" minHeight="30" prefHeight="30" style="-fx-padding: 5;">
+        <Button fx:id="prevMonthButton" text="Previous Month" style="-fx-font-size: 12;"/>
+        <Label fx:id="monthLabel" text="Month Year" style="-fx-font-size: 14; -fx-font-weight: bold;"/>
+        <Button fx:id="nextMonthButton" text="Next Month" style="-fx-font-size: 12;"/>
+    </HBox>
+
+    <!-- Calendar grid (larger, ~95% of page) -->
+    <GridPane fx:id="calendarGrid" hgap="2" vgap="2" alignment="TOP_CENTER" VBox.vgrow="ALWAYS" style="-fx-padding: 0;">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="14.2857"/>
+            <ColumnConstraints percentWidth="14.2857"/>
+            <ColumnConstraints percentWidth="14.2857"/>
+            <ColumnConstraints percentWidth="14.2857"/>
+            <ColumnConstraints percentWidth="14.2857"/>
+            <ColumnConstraints percentWidth="14.2857"/>
+            <ColumnConstraints percentWidth="14.2857"/>
+        </columnConstraints>
+        <!-- Rows populated dynamically by CalendarController -->
+    </GridPane>
+
+</VBox>

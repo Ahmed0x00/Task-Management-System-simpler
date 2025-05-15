@@ -1,0 +1,13 @@
+[ {
+  "id" : "5bb1f524-780e-42d3-9cg3-685a7f0b1d2e",
+  "name" : "Acme Corp",
+  "phoneNumber" : "+1-555-123-4567"
+}, {
+  "id" : "6cc2g635-891f-53e4-0dh4-796b8g1c2e3f",
+  "name" : "Jane Doe",
+  "phoneNumber" : null
+}, {
+  "id" : "fa50c4d8-08e4-4f7b-9f8b-bd08a6854a00",
+  "name" : "ahmed",
+  "phoneNumber" : "123"
+} ]

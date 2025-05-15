@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="taskmanagement.controller.ViewRequestsController"
+      spacing="10" alignment="TOP_CENTER" prefWidth="800" prefHeight="600">
+
+    <VBox fx:id="submissionForm" spacing="10" alignment="CENTER" visible="false">
+        <Label text="Submit Request"/>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Type:"/>
+            <ComboBox fx:id="typeComboBox" prefWidth="150"/>
+        </HBox>
+        <HBox fx:id="leaveTypeBox" spacing="10" alignment="CENTER" visible="false">
+            <Label text="Leave Type:"/>
+            <ComboBox fx:id="leaveTypeComboBox" prefWidth="150"/>
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Start Date:"/>
+            <DatePicker fx:id="startDatePicker"/>
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="End Date:"/>
+            <DatePicker fx:id="endDatePicker"/>
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Reason:"/>
+            <TextField fx:id="reasonField" prefWidth="200"/>
+        </HBox>
+        <Button fx:id="submitButton" text="Submit" onAction="#handleSubmitRequest"/>
+    </VBox>
+
+    <TableView fx:id="requestTable" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="employeeNameColumn" text="Employee Name" prefWidth="150"/>
+            <TableColumn fx:id="typeColumn" text="Type" prefWidth="150"/>
+            <TableColumn fx:id="startDateColumn" text="Start Date" prefWidth="100"/>
+            <TableColumn fx:id="endDateColumn" text="End Date" prefWidth="100"/>
+            <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"/>
+            <TableColumn fx:id="reasonColumn" text="Reason" prefWidth="150"/>
+            <TableColumn fx:id="actionColumn" text="Actions" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+</VBox>

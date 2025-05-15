@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox fx:controller="taskmanagement.controller.AdminController"
+      xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="TOP_CENTER">
+    <Label text="Admin Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Manage Users" onAction="#loadManageUsersView" />
+        <Button text="Manage Employees" onAction="#loadManageEmployeesView" />
+        <Button text="Manage Employee Types" onAction="#loadManageEmployeeTypesView" />
+        <Button text="Manage Projects" onAction="#loadManageProjectsView" />
+        <Button text="Manage Customers" onAction="#loadManageCustomersView" />
+        <Button text="Manage Tasks" onAction="#loadManageTasksView" />
+        <Button text="Manage Task Phases" onAction="#loadManageTasksPhasesView" />
+    </HBox>
+    <StackPane fx:id="mainContent" minHeight="400" style="-fx-border-color: gray;">
+        <!-- Initial content can go here, or leave empty for dynamic loading -->
+        <Label text="Welcome to the Admin Dashboard" />
+    </StackPane>
+</VBox>
